@@ -434,9 +434,9 @@ Hero
 .hero-img-svg {
   display: none;
 }
-.hero-img {
+/* .hero-img {
   display: none;
-}
+} */
 .hero-info h4 {
   color: var(--clr-grey-5);
 }
@@ -631,7 +631,7 @@ Jobs
   }
 
   .active-btn {
-     box-shadow: -2px  var(--clr-primary-5);
+    box-shadow: -2px var(--clr-primary-5);
   }
   .job-btn:hover {
     box-shadow: -2px 0 var(--clr-primary-5);
