@@ -2,7 +2,6 @@ import React from "react"
 import Seo from "../components/Seo"
 
 const TagTemplate = ({ data, pageContext }) => {
-  console.log(data.strapiProject)
   return (
     <>
       <Seo
