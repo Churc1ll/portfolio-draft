@@ -5,16 +5,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import { useState } from "react"
 
-// require("dotenv").config({
-//   path: `.env.${process.env.NODE_ENV}`,
-// })
-
-// let url = `${process.env.STRAPI_API_URL}/images`
-// console.log(url)
-// let response = await fetch(url, { method: "GET" })
-// let answer = await response.json()
-// console.log(response)
-
 const Jobs = () => {
   const [index, setIndex] = useState(0)
   const allData = useStaticQuery(query)

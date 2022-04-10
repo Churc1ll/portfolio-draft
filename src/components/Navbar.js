@@ -8,7 +8,9 @@ const Navbar = ({ toggleButton }) => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} alt="webdev" />
+          <Link to="/">
+            <img src={logo} alt="webdev" />
+          </Link>
           <button type="button" className="toggle-btn" onClick={toggleButton}>
             {<FaAlignRight />}
           </button>

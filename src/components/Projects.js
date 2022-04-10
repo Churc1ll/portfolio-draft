@@ -10,7 +10,6 @@ const Projects = props => {
       <Title title={title} />
       <div className="section-center projects-center">
         {data.map((project, i) => {
-          console.log(project)
           return <Project key={project.id} index={i} {...project} />
         })}
       </div>

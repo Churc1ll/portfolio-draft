@@ -4,34 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-// const qs = require("qs")
-
-// const quer = qs.stringify(
-//   {
-//     populate: "*",
-//     pagination: {
-//       pageSize: 10,
-//       page: 1,
-//     },
-//     publicationState: "live",
-//     locale: ["en"],
-//   },
-//   {
-//     encodeValuesOnly: true, // prettify url
-//   }
-//   )
-
-// const getData = async () => {
-//   try {
-//     const request = await fetch(`/api/projects?${quer}`)
-//     // const data = await request.json()
-//     console.log(request.url)
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
-// getData()
-
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })

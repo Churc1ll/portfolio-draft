@@ -1,10 +1,14 @@
-import { graphql } from "gatsby"
 import React from "react"
 import Seo from "../components/Seo"
 
 const TagTemplate = ({ data, pageContext }) => {
+  console.log(data.strapiProject)
   return (
     <>
+      <Seo
+        title={pageContext.title.toUpperCase()}
+        description={pageContext.description}
+      />
       <main className="project-template-page">
         <h2>{pageContext.title}</h2>
         <p>{pageContext.description}</p>
@@ -12,27 +16,4 @@ const TagTemplate = ({ data, pageContext }) => {
     </>
   )
 }
-// export const query = graphql`
-//   query getSingleProject($title: String) {
-//     strapiProject(
-//       data: { elemMatch: { attributes: { title: { eq: $title } } } }
-//     ) {
-//       data {
-//         attributes {
-//           description
-//           title
-//           image {
-//             data {
-//               attributes {
-//                 localFile {
-//                   publicURL
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
 export default TagTemplate

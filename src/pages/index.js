@@ -24,11 +24,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   {
-    allStrapiProject(
-      filter: {
-        data: { elemMatch: { attributes: { featured: { eq: true } } } }
-      }
-    ) {
+    allStrapiProject {
       nodes {
         data {
           attributes {

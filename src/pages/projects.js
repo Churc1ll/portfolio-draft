@@ -7,14 +7,9 @@ const ProjectsPage = ({
     allStrapiProject: { nodes: projects },
   },
 }) => {
-  console.log(projects)
   return (
     <>
-      <Seo
-        title={projects.data.attributes.title.toUpperCase()}
-        description={projects.data.attributes.description}
-        // data={projects.data.attributes.image}
-      />
+      <Seo title="Projects" />
       <main>
         <section className="projects-page">
           <Projects title="all projects" projects={projects} />
