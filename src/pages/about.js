@@ -25,6 +25,7 @@ const About = ({ data }) => {
   } = data
   return (
     <>
+      <Seo title="About" />
       <section className="about-page">
         <div className="section-center about-center">
           <img src={publicURL} alt={title} className="about-img-svg" />

@@ -50,6 +50,14 @@ const strapiConfig = {
 }
 
 module.exports = {
+  siteMetadata: {
+    title: `template portfolio`,
+    description: `awesome portfolio build with Gatsby and Strapi`,
+    titleTemplate: `%s | Web dev`,
+    url: `https://portfolio-drafts.netlify.app`,
+    twitterUsername: `@dart_vader`,
+    image: `/mainImg.png`,
+  },
   /* Your site config here */
 
   plugins: [
@@ -68,12 +76,5 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,
     },
-
-    // resolve: `gatsby-source-strapi`,
-    // options: {
-    // apiURL: `http://localhost:1337/api`,
-    // queryLimit: 1000, // Default to 100
-    // collectionTypes: [`job`],
-    // components: [description]
   ],
 }
